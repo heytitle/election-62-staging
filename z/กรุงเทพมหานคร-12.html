@@ -82,9 +82,9 @@
     <ul>
         
         <li class="candidate">
-            <img class="avatar" src="//pat.chormai.org/election-62-staging/statics/party-logos/อนาคตไทย.png" />
+            <img class="avatar" src="//pat.chormai.org/election-62-staging/statics/party-logos/อนาคตใหม่.png" />
             <div class="details">
-                <h2>อนาคตไทย</h2>
+                <h2>อนาคตใหม่</h2>
                 <div class="name">
                     นาย เอราวัณ วานิชย์หานนท์
                 </div>
@@ -648,7 +648,8 @@
             'event_label': url,
             'transport_type': 'beacon',
             'event_callback': function(){
-                document.location = url;
+                var win = window.open(url, '_blank');
+                win.focus();
             }
         });
     }
